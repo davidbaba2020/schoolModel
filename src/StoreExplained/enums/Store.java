@@ -1,4 +1,4 @@
-package StoreExplained.models;
+package StoreExplained.enums;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,14 +9,16 @@ import java.util.Map;
 public class Store {
     private Map<Product, Integer> listOfProducts = new HashMap<>();
     private List<ProductUsingList> productList = new ArrayList<>();
+    private static List<Product> productsInStore = new ArrayList<>();
 
 
     public Store() {
     }
 
-    public Store(Map<Product, Integer> listOfProducts, List<ProductUsingList> productList) {
+    public Store(Map<Product, Integer> listOfProducts, List<ProductUsingList> productList, List<Product> productsInStore) {
         this.listOfProducts = listOfProducts;
         this.productList = productList;
+        this.productsInStore = productsInStore;
     }
 
     public Map<Product, Integer> getListOfProducts() {
@@ -35,12 +37,13 @@ public class Store {
         this.productList = productList;
     }
 
-    @Override
-    public String toString() {
-        return "Store{" +
-                "listOfProducts=" + listOfProducts +
-                ", productList=" + productList +
-                '}';
+    public List<Product> getProductsInStore() {
+        return productsInStore;
     }
+
+    public void setProductsInStore(List<Product> productsInStore) {
+        this.productsInStore = productsInStore;
+    }
+
 
 }

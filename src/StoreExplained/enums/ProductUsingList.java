@@ -1,4 +1,4 @@
-package StoreExplained.models;
+package StoreExplained.enums;
 
 public class ProductUsingList {
     private String id;

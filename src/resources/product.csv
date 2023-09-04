@@ -3,4 +3,5 @@ id,Name,Category,Price,Quantity
 2,Coke,DRINK,250,40
 3,Milk,BEVERAGE,600,50
 4,Shirt,CLOTHING,1000,30
-4,Bread,FOOD,100,30
+5,Bread,FOOD,100,30
+6,V-neck-shirt,CLOTHES,1000,10

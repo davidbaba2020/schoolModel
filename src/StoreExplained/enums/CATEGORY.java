@@ -1,4 +1,4 @@
-package StoreExplained.enus;
+package StoreExplained.enums;
 
 public enum CATEGORY {
     FOOD,

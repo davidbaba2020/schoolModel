@@ -1,6 +1,4 @@
-package StoreExplained.models;
-
-import StoreExplained.enus.CATEGORY;
+package StoreExplained.enums;
 
 public class Product {
     private String id;
@@ -62,12 +60,12 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", category=" + category +
-                ", price=" + price +
-                ", quantity=" + quantity +
-                '}';
+        return "Product[" +
+                "id:'" + id + '\'' +
+                "name:'" + name + '\'' +
+                "category:" + category +
+                "price:" + price +
+                "quantity=" + quantity +
+                ']'+'\n';
     }
 }
