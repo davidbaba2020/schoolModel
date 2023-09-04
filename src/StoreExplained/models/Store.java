@@ -42,4 +42,5 @@ public class Store {
                 ", productList=" + productList +
                 '}';
     }
+
 }

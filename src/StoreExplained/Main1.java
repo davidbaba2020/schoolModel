@@ -1,8 +1,10 @@
 package StoreExplained;
 
+import StoreExplained.enus.CATEGORY;
 import StoreExplained.models.Product;
 import StoreExplained.models.ProductUsingList;
 import StoreExplained.models.Store;
+import StoreExplained.service.StoreService;
 
 import java.util.List;
 import java.util.Map;
@@ -11,9 +13,9 @@ public class Main1 {
 
     public static void main(String[] args) {
 
-        Product p1 = new Product("1","Milk",100.0);
-        Product p2 = new Product("2","Tomatoes",120.0);
-        Product p3 = new Product("3","Bread",130.0);
+        Product p1 = new Product("1","FOOD", CATEGORY.FOOD,100.0,30);
+        Product p2 = new Product("2","Tomatoes",CATEGORY.FOOD,120.0,12);
+        Product p3 = new Product("3","Bread",CATEGORY.FOOD,130.0,7);
 
         Store store = new Store();
 
@@ -70,6 +72,11 @@ public class Main1 {
         System.out.println(m.customerBuysProductUsingArrayList(pl1,store2));
         System.out.println("**********************8*********************");
         System.out.println(storeProductList);
+
+        System.out.println("**********************Read From Store*********************");
+        StoreService store3 = new StoreService();
+        System.out.println(store3.addProductToStore());
+        System.out.println(store3.addProductToStore().size());
 
     }
 
