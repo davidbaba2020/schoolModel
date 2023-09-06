@@ -4,7 +4,7 @@ import enus.DESIGNATION;
 
 import java.util.List;
 
-public class Staff {
+public class Staff implements Comparable<Staff>{
     private int id;
     private DESIGNATION designation;
     private String name;
@@ -57,10 +57,14 @@ public class Staff {
     public String toString() {
         return "Staff{" +
                 "id=" + id +
-                ", designation=" + designation +
-                ", name='" + name + '\'' +
-                ", courses=" + courses +
+//                ", designation=" + designation +
+//                ", name='" + name + '\'' +
+//                ", courses=" + courses +
                 '}';
     }
 
+    @Override
+    public int compareTo(Staff that) {
+        return this.getId()-that.getId();
+    }
 }
